@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>LeaderBoard</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> 
+
+        <style>
+        footer{
+            position: fixed;
+            width: 50%;
+            bottom: 10px;
+            background-color:   #ADD8E6;
+            width:97.5%;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <a href="/" class="btn btn-info"><h4><b>Roll Of Honor</b></h4></a>
+                </div>
+                    <div class="col-lg-3">
+                        <h3>Congratzzz!!! <span class="glyphicon glyphicon-thumbs-up"></span></h3>
+                    </div>
+                </div>
+            </div>
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="/"> <span class="glyphicon glyphicon-home"></span> Home</a></li>
+              <!--  {% if user.is_authenticated %} -->
+                    <li class="active"><a href="/form"> <span class="glyphicon glyphicon-plus-sign"></span> New</a></li>
+               <!-- {% endif %} -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <!-- {% if user.is_authenticated %} -->
+                    <li class="active"><a href="/signout"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+                <!-- {% else %} -->
+                    <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="/signin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <!-- {% endif %} -->
+            </ul>
+        </div>
+    </nav>
+<div class="container">
+        <h3>Sorry,your request cannot be proceesed.Please,login to process the request.</h3>
+      </div>  
+    </body>
+     <footer>
+        <div class="footer">
+        <h6><center><b>Copyright &copy; 2018 | Developed using HTML,Bootstrap and Django </b></center></h6>
+        </div>
+    </footer>
+</html>
+
+

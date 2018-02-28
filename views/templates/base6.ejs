@@ -1,0 +1,28 @@
+<div class="col-lg-5"></div>
+ <div class="col-lg-5">
+ <div>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<h3><b><u>Edit</u></b></h3>
+ </div>
+ <br>
+ <div>
+<% for (i in items) { %>
+ 	<form action="/update/<%= items[i]._id %>" method="post">
+ 	
+ 		Name:<br>
+ 		<input type="text" name="name" value="<%= items[i].name %>">
+ 		<br>
+ 		Score:<br>
+ 		<input type="number" name="score" value="<%= items[i].score %>">
+ 		<br>
+ 		<button type="submit" style="margin-left:1.5cm" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-save"></span> Save</button>
+ 	
+ 	</form>
+
+ 	<% } %>
+ </div>
+ </div>

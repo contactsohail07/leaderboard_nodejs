@@ -1,0 +1,31 @@
+    <div class="row">
+        <div class="col-lg-10"></div>
+        <div class="col-lg-1">
+    <!--   {% if user.is_authenticated %} --> 
+        <% for(i in items){ %>   
+           <a class="btn btn-default" href="/delete/<%= items[i]._id %>"><span class="glyphicon glyphicon-trash"></span></a>
+	<!--   {% endif %} --></div>
+        <div class="col-lg-1">
+    <!--   {% if user.is_authenticated %} -->
+           <a class="btn btn-default" href="/edit/<%= items[i]._id %>"><span class="glyphicon glyphicon-pencil"></span></a>
+    <!--   {% endif %} -->
+    </div>
+	</div>
+    <br>
+
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr class="info">
+                <td><%= items[i].name %></td>
+                <td><%= items[i].score %></td>  
+            </tr>
+        <% } %>
+    </tbody>
+    
+    </table>
